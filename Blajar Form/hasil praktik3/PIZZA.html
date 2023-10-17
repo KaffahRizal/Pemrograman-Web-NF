@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form pemesanan Pizza</title>
+
+  
+</head>
+<body style="background-image: url(123.jpg);background-repeat: no-repeat;background-size: cover;">
+
+ <div class="container" style="max-width: 700px;margin: 0 auto;padding: 20px;background-color: rgba(255, 136, 0, 0.799);border-radius: 10px;box-shadow: 0 0 10px rgba(255, 255, 255, 0.658);">
+    
+      <h1 style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; ">BLACK◇GOOSE◇BISTRO™ | PIZZA~</h1>
+
+      <h2 style="text-align: center;"><img src="1.jpg" alt="Delicious pizza" width="650" height="250"></h2>
+
+           <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><strong>
+            "Delicious, cheesy, and perfect for any occasion -
+            our mouthwatering pizzas will satisfy all your cravings. Made with the finest ingredients 
+             and skillfully crafted, each bite is a flavorful delight. From classic favorites 
+             like Margherita and Pepperoni to gourmet creations like BBQ Chicken and Veggie Medley,
+            our menu offers something for everyone. Whether you're hosting a party or 
+            enjoying a cozy night in, indulge in the ultimate pizza experience.
+             Order now and experience the simplicity of pizza perfection!" ~Chris Bianco
+     </strong></p>
+    <form action="http://blackgoosebistro.com/pizza.php" method="POST">
+
+        <fieldset>
+        <legend>Your Information</legend>
+
+        <TABLE>
+            <tr>
+                <td>Name</td>
+                <td>
+                    <input type="text" name="customername">
+                </td>
+            </tr>
+            <TR>
+                <TD>Address</TD>
+                <td><textarea name="address" cols="25" rows="3"></textarea></td>
+            </TR>
+            <tr>
+                <td>Telp</td>
+                <td>
+                    <input type="number" name="telephone">
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="email" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td>Delivery Instructions</td>
+                <td>
+                    <textarea name="instructions" cols="30" rows="5"></textarea>
+                </td>
+            </tr>
+
+
+
+        </table>
+        </fieldset>
+
+        <h2 style="text-align: center;">Design your own pizza</h2>
+        <fieldset style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+            <legend>Pizza MENU~</legend>
+            <br>*Crust (choose one)
+            <br><input type="radio" name="crust" value="Focaccia crust">Focaccia crust
+            <br><input type="radio" name="crust" value="Flatbread">Flatbread
+            <br><input type="radio" name="crust" value="Cauliflower">Cauliflower
+            <br><input type="radio" name="crust" value="Garlic Herb">Garlic Herb
+
+           
+           <br>*Toppings (choose as many as you want):
+            <br><input type="checkbox" name="toppings[]" value="Jalapenos">Jalapenos
+            <br><input type="checkbox" name="toppings[]" value="Spinach">Spinach
+            <br><input type="checkbox" name="toppings[]" value="Feta Cheese">Feta Cheese
+            <br><input type="checkbox" name="toppings[]" value="pineapple">pineapple
+
+            <br><label for="pizzas">How many pizzas</label>
+            <select name="pizzas" id="pizzas">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+
+            <br>
+            <h6><button type="submit">Get the pizza NOW!!!</button>
+            <button type="reset">reset</button></h6>
+        </fieldset>
+        
+
+
+
+    </form>
+
+ </div>
+    
+</body>
+</html>
