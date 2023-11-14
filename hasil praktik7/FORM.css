@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+  background-color: black;
+  padding: 20px 100px;
+}
+.navbar a {
+  color: gray;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+.text-title {
+  font-size: 20px !important;
+}
+h1 {
+  text-align: center;
+  font-weight: 100;
+}
+table {
+  margin: 20px auto;
+}
+input,
+select {
+  height: 25px;
+}
+input,
+select,
+textarea {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+td {
+  padding: 6px 10px;
+}
+label {
+  text-align: end;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+} /*label adalah INLINE TAG makanya HARUS DI DISPLAY BLOK DULUUUUU*/
+button {
+  padding: 6px 10px;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+}
+.btn-blue{
+    background-color: cornflowerblue;
+}
+.btn-red{
+    background-color: crimson;
+}
