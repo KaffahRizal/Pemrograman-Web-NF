@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>latihan8</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: flex;
+        background: rgb(255, 255, 255);
+        margin: 20px;
+      }
+
+      .col {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+      }
+
+      .row {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 70vh;
+      }
+
+      .header,
+      .footer {
+        background-color: aqua;
+        flex-direction: column;
+        width: 100%;
+        height: 15vh;
+      }
+
+      .article {
+        flex-direction: row;
+        width: 70%;
+        display: flex;
+        background-color: rgb(84, 84, 13);
+        margin: 20px 0px 20px 0px;
+        padding: 50px 20px 10px 20px;
+      }
+      .notes{
+        display: flex;
+        align-items: end;
+        flex-direction: row;
+      }
+
+      .asside {
+        width: 30%;
+        background-color: yellow;
+        margin: 20px 20px 20px 0px;
+      }
+
+      article {
+        flex-direction: row;
+        background-color: rgb(254, 18, 18);
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="col">
+        <div class="header">
+          <p>Header</p>
+        </div>
+        <div class="row">
+          <div class="asside">
+            <p>Asside</p>
+          </div>
+          <div class="article">
+            <p>Article</p>
+            <div class="notes">
+              <article>
+                <p>article1</p>
+              </article>
+              <article>
+                <p>article2</p>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <p>Footer</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
