@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sum Operations</h1>
+    <div>
+        <label for="masuk">First Num</label>
+        <input type="number" id="masuk" onchange="parkingFee()">      
+    </div>
+    <hr>
+    <div>+</div>
+    <hr>
+    <div>
+        <label for="masuk2">Second Num</label>
+        <input type="number" id="masuk2" onchange="parkingFee()">    
+    </div>
+    <hr>
+    <div>=</div>
+    <hr>
+    <div>
+        <label for="hasil">sum result</label>
+        <input type="number" id="hasil" >    
+    </div>
+    <hr>
+    <button onclick="tambah()">Jumlahkan</button>
+    
+    <script src="Qtambah.js">
+        // ambil inputan nilai yang masuk
+        let masuk = document.getElementById('masuk').value
+        let masuk2 = document.getElementById('masuk2').value
+  
+        // ambil elemen untuk menampilkan hasil
+        let hasil = document.getElementById('keluar')
+    </script>
+</body>
+</html>

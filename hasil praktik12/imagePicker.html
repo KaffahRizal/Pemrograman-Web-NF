@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+</head>
+<body>
+    <h1>Image Picker</h1>
+    <select id="selectAnimal">
+        <option value="dog.jpg">dog</option>
+        <option value="wolf.jpg" selected>wolf</option>
+        <option value="turtle.jpg">turtle</option>
+        <option value="cat.jpg">cat</option>
+        <option value="bird.jpg">bird</option>
+    </select>
+    <br>
+    <br>
+    <img src="" id="image">
+
+    <script>
+        // tangkap
+        const selecAnimal = document.getElementById("selectAnimmal")
+        const image = document.getElementById("image")
+        
+
+        selectAnimal.addEventListener("change",changeImage)
+
+        function changeImage(){
+            image.src = "img/" + selectAnimal.value
+        }
+        changeImage()
+        
+    </script>
+</body>
+</html>

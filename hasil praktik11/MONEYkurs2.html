@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Kurs Conveter</h1>
+    <div>
+      <label for="masuk">First Num</label>
+      <input type="number" id="masuk" />
+      <label for="hasil">Result</label>
+      <input type="number" id="hasilnya" />
+      <button onclick="Convert()">Convert</button>
+    </div>
+
+    <div></div>
+    <hr />
+    
+
+    <script>
+      function Convert() {
+        // ambil inputan nilai yang masuk
+        let masuk = document.getElementById('masuk').value;
+        // ambil elemen untuk menampilkan hasil
+        let hasilnya = document.getElementById('hasilnya');
+
+        const paw = 1 / 14650;
+
+        let hasil = masuk * paw;
+
+        console.log('hasil: ' + hasil);
+
+        hasilnya.value = hasil;
+      }
+    </script>
+  </body>
+</html>
