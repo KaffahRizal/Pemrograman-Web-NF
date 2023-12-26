@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validasi</title>
+</head>
+<body>
+    <form id="formValidasi" autocomplete="off">
+        <label for="namaPelanggan">Nama Pelanggan:</label>
+        <input type="text" id="namaPelanggan" name="namaPelanggan" required>
+        <span id="errorNama"></span><br>
+       
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span id="errorEmail"></span><br>
+       
+        <label for="jamKeberangkatan">Jam Keberangkatan:</label>
+        <input type="time" id="jamKeberangkatan" name="jamKeberangkatan" required>
+        <span id="errorJam"></span><br>
+       
+        <label for="tujuanKeberangkatan">Tujuan Keberangkatan:</label>
+        <input type="text" id="tujuanKeberangkatan" name="tujuanKeberangkatan" required>
+        <span id="errorTujuan"></span><br>
+       
+        <label for="jumlahTiket">Jumlah Tiket:</label>
+        <input type="number" id="jumlahTiket" name="jumlahTiket" min="1" max="10" required>
+        <span id="errorJumlah"></span><br>
+       
+        <button type="submit">Submit</button>
+    </form>
+       
+       <div id="dataValid"></div>
+
+       <script src="Fvalid.js"></script>
+</body>
+</html>
